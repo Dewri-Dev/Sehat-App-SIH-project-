@@ -1,0 +1,200 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-slate-50 dark group/design-root overflow-x-hidden" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(100, 116, 139)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: &quot;Spline Sans&quot;, &quot;Noto Sans&quot;, sans-serif;">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-slate-900">
+<span class="material-symbols-outlined text-purple-600 text-3xl">health_and_safety</span>
+<h2 class="text-slate-900 text-xl font-bold leading-tight tracking-[-0.015em]">Sehat</h2>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-slate-600 hover:text-slate-900 text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-slate-600 hover:text-slate-900 text-sm font-medium leading-normal" href="#">Services</a>
+<a class="text-slate-600 hover:text-slate-900 text-sm font-medium leading-normal" href="#">About Us</a>
+<a class="text-slate-600 hover:text-slate-900 text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-purple-600 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-purple-700 transition-colors">
+<span class="truncate">Book Appointment</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-slate-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNRIYHNTZhL3emtimOA2ahhBHxlBBo6HaTaYu_IZvWGcov17jwT5snNAcQoNcTGabFv4_VCufwfvgXg0b1We4VBso5wsW2JLT1beJh3FBHBnfKhhCc9MxrWETWcRc6ZxnaTz2Ak6n--VyqXrXMIXxWJG9owNLskd805UY2Wtkhx2Pl7_2wCwp-HjGgP1cjdopKviC-r2Qxpyr1pjD_MZ4JjUgxbkjAnbjGW8Ve8BmvLZWZzm8QF3wszl0sB-MyRQt6n1pzVTKaMIs7");'></div>
+</div>
+</header>
+<main class="flex flex-1">
+<aside class="w-80 border-r border-slate-200 p-6 bg-white">
+<h2 class="text-slate-900 text-2xl font-bold leading-tight tracking-tighter mb-6">Filters</h2>
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="text-slate-700 text-sm font-medium leading-normal" for="specialty">Specialty</label>
+<select class="form-select w-full rounded-xl border-slate-300 bg-slate-50 text-slate-900 focus:border-purple-600 focus:ring-purple-600 h-12 bg-[image:--select-button-svg] placeholder:text-slate-400 p-3 text-sm font-normal" id="specialty">
+<option>Select Specialty</option>
+<option>Cardiology</option>
+<option>Dermatology</option>
+<option>Pediatrics</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-slate-700 text-sm font-medium leading-normal" for="location">Location</label>
+<select class="form-select w-full rounded-xl border-slate-300 bg-slate-50 text-slate-900 focus:border-purple-600 focus:ring-purple-600 h-12 bg-[image:--select-button-svg] placeholder:text-slate-400 p-3 text-sm font-normal" id="location">
+<option>Select Location</option>
+<option>Amritsar</option>
+<option>Ludhiana</option>
+<option>Jalandhar</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-slate-700 text-sm font-medium leading-normal" for="availability">Availability</label>
+<select class="form-select w-full rounded-xl border-slate-300 bg-slate-50 text-slate-900 focus:border-purple-600 focus:ring-purple-600 h-12 bg-[image:--select-button-svg] placeholder:text-slate-400 p-3 text-sm font-normal" id="availability">
+<option>Select Availability</option>
+<option>Today</option>
+<option>This Week</option>
+<option>This Month</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-slate-700 text-sm font-medium leading-normal" for="experience">Experience (Years)</label>
+<input class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-purple-600" id="experience" max="40" min="0" type="range" value="10"/>
+<div class="flex justify-between text-xs text-slate-500">
+<span>0</span>
+<span>40+</span>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-slate-700 text-sm font-medium leading-normal">Gender</p>
+<div class="flex flex-wrap gap-3">
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-full border border-slate-300 px-4 h-10 text-slate-700 has-[:checked]:bg-purple-600 has-[:checked]:text-white has-[:checked]:border-purple-600 relative cursor-pointer transition-colors">
+                    Male
+                    <input class="invisible absolute" name="gender" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-full border border-slate-300 px-4 h-10 text-slate-700 has-[:checked]:bg-purple-600 has-[:checked]:text-white has-[:checked]:border-purple-600 relative cursor-pointer transition-colors">
+                    Female
+                    <input class="invisible absolute" name="gender" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-full border border-slate-300 px-4 h-10 text-slate-700 has-[:checked]:bg-purple-600 has-[:checked]:text-white has-[:checked]:border-purple-600 relative cursor-pointer transition-colors">
+                    Any
+                    <input checked="" class="invisible absolute" name="gender" type="radio"/>
+</label>
+</div>
+</div>
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-purple-600 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-purple-700 transition-colors">
+<span class="truncate">Apply Filters</span>
+</button>
+</div>
+</aside>
+<div class="flex-1 p-8 bg-slate-50">
+<h1 class="text-slate-900 text-4xl font-bold leading-tight tracking-tighter mb-4">Find a Doctor</h1>
+<div class="mb-6">
+<label class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-slate-400">search</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-slate-900 focus:outline-0 focus:ring-2 focus:ring-purple-600 border-slate-300 bg-white h-14 placeholder:text-slate-400 pl-12 pr-4 text-base font-normal" placeholder="Search by doctor name or specialty" value=""/>
+</label>
+</div>
+<h3 class="text-slate-900 text-xl font-bold leading-tight tracking-[-0.015em] mb-4">Search Results (3)</h3>
+<div id="doctorList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+<div class="flex items-center text-sm text-slate-500 gap-1">
+<span class="material-symbols-outlined text-base text-purple-600">star</span>
+<span>4.9 (124 reviews)</span>
+</div>
+<button class="w-full flex items-center justify-center rounded-full h-10 px-4 bg-purple-100 text-purple-700 text-sm font-bold hover:bg-purple-200 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl bg-white p-5 shadow-sm hover:shadow-lg hover:shadow-purple-200 transition-shadow border border-slate-200">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 bg-center bg-no-repeat bg-cover rounded-full flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDI7lc2Q8FCM9y76dO9FUkYm-j_sYl_mvqGHQZpolqtwT_8xnBqX7BwUMjpfDq5UlgZl2YPsosd6mRgIkpIeJUVrWMekJ1uklitDfjj_X9lsRvE_4T7pN91uusfbI73yNMfJDmwemeR-ocNf-uaRMZfDY3uoYp9B3jmtHuEeEM-WG63YvM8oKiyOyPvc1s3x4tDBBwAe_ZCBcIsl-ZM0QV7TLLW6JJksL7ca1osrajHqZZu44fNApDT0_8FzyhIiBBfdRvXZTdFq1tl");'></div>
+<div class="flex-1">
+<p class="text-slate-900 text-lg font-bold">Dr. Vikram Singh</p>
+<p class="text-slate-500 text-sm">General Physician</p>
+<p class="text-slate-500 text-sm">10 years experience</p>
+</div>
+</div>
+<div class="flex items-center text-sm text-slate-500 gap-1">
+<span class="material-symbols-outlined text-base text-purple-600">star</span>
+<span>4.8 (98 reviews)</span>
+</div>
+<button class="w-full flex items-center justify-center rounded-full h-10 px-4 bg-purple-100 text-purple-700 text-sm font-bold hover:bg-purple-200 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl bg-white p-5 shadow-sm hover:shadow-lg hover:shadow-purple-200 transition-shadow border border-slate-200">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 bg-center bg-no-repeat bg-cover rounded-full flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4DIijfrpNxtMauOOR9jE2CHDVMyD0DfdXx7INYxEaC5YTT9JZ0TtCjgNd8sl31TEsM28iTVOCjG7BquBS2oW7g7A9jsbBtQmM0uwVi6Mw7gGsPNjld7Uetnd9OeLuFpejnot-nU-HcAsxv77Ym3gZUjQuaPioCDDM7zJurz8UiuNMg_FGN5XyfA4WH_JbaKORuoT3u3Zm0xpxjUEc3u5yUe22OZmXI31WLQMM1yIU7gOgQ1hr_K47XtSYdUOEUiOqWyZQiVriF6G8");'></div>
+<div class="flex-1">
+<p class="text-slate-900 text-lg font-bold">Dr. Anika Patel</p>
+<p class="text-slate-500 text-sm">Pediatrician</p>
+<p class="text-slate-500 text-sm">8 years experience</p>
+</div>
+</div>
+<div class="flex items-center text-sm text-slate-500 gap-1">
+<span class="material-symbols-outlined text-base text-purple-600">star</span>
+<span>4.9 (150 reviews)</span>
+</div>
+<button class="w-full flex items-center justify-center rounded-full h-10 px-4 bg-purple-100 text-purple-700 text-sm font-bold hover:bg-purple-200 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-center p-8 mt-4">
+<a class="flex size-10 items-center justify-center text-slate-500 hover:text-slate-900" href="#">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+<a class="text-sm font-bold leading-normal flex size-10 items-center justify-center text-white rounded-full bg-purple-600" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-500 hover:text-white hover:bg-purple-600/50 rounded-full" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-500 hover:text-white hover:bg-purple-600/50 rounded-full" href="#">3</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-400">...</span>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-500 hover:text-white hover:bg-purple-600/50 rounded-full" href="#">10</a>
+<a class="flex size-10 items-center justify-center text-slate-500 hover:text-slate-900" href="#">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+<script>
+fetch("http://localhost:5000/doctors")
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("doctorList");
+
+    data.forEach(doc => {
+      const card = `
+      <div class="flex flex-col gap-4 rounded-2xl bg-white p-5 shadow-sm border border-slate-200">
+        <div class="flex items-start gap-4">
+          <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center text-2xl font-bold text-purple-600">
+            ${doc.name.charAt(0)}
+          </div>
+          <div class="flex-1">
+            <p class="text-slate-900 text-lg font-bold">${doc.name}</p>
+            <p class="text-slate-500 text-sm">${doc.specialty}</p>
+            <p class="text-slate-500 text-sm">${doc.experience} years experience</p>
+          </div>
+        </div>
+
+        <div class="flex items-center text-sm text-slate-500 gap-1">
+          ⭐ ${doc.rating}
+        </div>
+
+        <button class="w-full rounded-full h-10 px-4 bg-purple-100 text-purple-700 font-bold">
+          View Profile
+        </button>
+      </div>
+      `;
+
+      container.innerHTML += card;
+    });
+  });
+</script>
+
+</body></html>
