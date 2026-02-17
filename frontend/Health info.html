@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Sehat Sahayak - Health Hub</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #A855F7;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#F9FAFB] group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Header -->
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#E5E7EB] px-10 py-3 bg-white sticky top-0 z-50">
+                <div class="flex items-center gap-8">
+                    <a href="homepage.html" class="flex items-center gap-4 text-[#1F2937] hover:opacity-80 transition-opacity">
+                        <svg class="lucide lucide-heart-pulse text-purple-600" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                            <path d="M3.22 12H9.5l.71 2.14.71-4.28L11.57 12H18"></path>
+                        </svg>
+                        <h2 class="text-[#1F2937] text-lg font-bold leading-tight tracking-[-0.015em]">Sehat Sahayak</h2>
+                    </a>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <!-- UPDATED LINKS -->
+                        <a class="text-[#4B5563] hover:text-[var(--primary-color)] transition-colors text-sm font-medium leading-normal" href="homepage.html">Home</a>
+                        <a class="text-[#4B5563] hover:text-[var(--primary-color)] transition-colors text-sm font-medium leading-normal" href="Doctors.html">Find Doctors</a>
+                        <a class="text-[var(--primary-color)] text-sm font-bold leading-normal underline decoration-2 underline-offset-4" href="Health info.html">Health Hub</a>
+                        <a class="text-[#4B5563] hover:text-[var(--primary-color)] transition-colors text-sm font-medium leading-normal" href="#">About Us</a>
+                    </nav>
+                </div>
+                <div class="flex flex-1 justify-end gap-4">
+                    <button class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-transparent text-[#4B5563] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                        <svg class="lucide lucide-menu" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-transparent text-[#4B5563] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                        <div class="text-[#4B5563]" data-icon="Bell" data-size="20px" data-weight="regular">
+                            <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200" style='background-image: url("https://api.dicebear.com/7.x/avataaars/svg?seed=Felix");'></div>
+                </div>
+            </header>
+
+            <main class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex flex-col gap-6 p-4">
+                        <div class="text-center">
+                            <h1 class="text-[#1F2937] text-4xl md:text-5xl font-bold leading-tight tracking-tighter">Your Guide to Health &amp; Wellness</h1>
+                            <p class="text-[#6B7280] mt-4 text-lg">Reliable medical information, health tips, and first-aid guides for the people of Punjab.</p>
+                        </div>
+                        <div class="relative w-full max-w-2xl mx-auto">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-4 text-[#6B7280]">
+                                <svg class="lucide lucide-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.3-4.3"></path>
+                                </svg>
+                            </div>
+                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-[#1F2937] focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-solid border-[#E5E7EB] bg-white h-14 placeholder:text-[#6B7280] px-12 text-base font-normal leading-normal" placeholder="Search for health topics, symptoms, or remedies" value=""/>
+                        </div>
+                    </div>
+
+                    <!-- Category Section -->
+                    <div class="px-4 py-8">
+                        <h2 class="text-[#1F2937] text-2xl font-bold leading-tight tracking-[-0.015em] mb-6">Explore by Category</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                            <button class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D5FF] transition-all text-center">
+                                <p class="text-[#1F2937] text-sm font-medium">First Aid</p>
+                            </button>
+                            <button class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D5FF] transition-all text-center">
+                                <p class="text-[#1F2937] text-sm font-medium">Common Illnesses</p>
+                            </button>
+                            <button class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D5FF] transition-all text-center">
+                                <p class="text-[#1F2937] text-sm font-medium">Nutrition</p>
+                            </button>
+                            <button class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D5FF] transition-all text-center">
+                                <p class="text-[#1F2937] text-sm font-medium">Mental Health</p>
+                            </button>
+                            <button class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D5FF] transition-all text-center">
+                                <p class="text-[#1F2937] text-sm font-medium">Women's Health</p>
+                            </button>
+                            <button class="flex flex-col items-center justify-center gap-2 p-4 rounded-xl bg-[#F3E8FF] hover:bg-[#E9D5FF] transition-all text-center">
+                                <p class="text-[#1F2937] text-sm font-medium">Children's Health</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Articles Section -->
+                    <div class="px-4 py-8">
+                        <h2 class="text-[#1F2937] text-2xl font-bold leading-tight tracking-[-0.015em] mb-6">Featured Articles</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="flex flex-col bg-white border border-solid border-[#E5E7EB] rounded-xl overflow-hidden group hover:shadow-md transition-shadow">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=400&q=80");'></div>
+                                <div class="p-4 flex flex-col gap-2">
+                                    <p class="text-[#1F2937] text-base font-bold leading-tight">Understanding Common Cold Symptoms</p>
+                                    <p class="text-[#6B7280] text-sm font-normal leading-normal">Learn about the symptoms of the common cold and how to manage them effectively.</p>
+                                    <a class="text-[var(--primary-color)] text-sm font-bold mt-2 self-start hover:underline" href="#">Read More →</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col bg-white border border-solid border-[#E5E7EB] rounded-xl overflow-hidden group hover:shadow-md transition-shadow">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=400&q=80");'></div>
+                                <div class="p-4 flex flex-col gap-2">
+                                    <p class="text-[#1F2937] text-base font-bold leading-tight">Healthy Eating Habits for Families</p>
+                                    <p class="text-[#6B7280] text-sm font-normal leading-normal">Discover tips for maintaining healthy eating habits for your entire family.</p>
+                                    <a class="text-[var(--primary-color)] text-sm font-bold mt-2 self-start hover:underline" href="#">Read More →</a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col bg-white border border-solid border-[#E5E7EB] rounded-xl overflow-hidden group hover:shadow-md transition-shadow">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=400&q=80");'></div>
+                                <div class="p-4 flex flex-col gap-2">
+                                    <p class="text-[#1F2937] text-base font-bold leading-tight">First Aid for Minor Injuries</p>
+                                    <p class="text-[#6B7280] text-sm font-normal leading-normal">A guide to providing first aid for minor injuries like cuts and bruises.</p>
+                                    <a class="text-[var(--primary-color)] text-sm font-bold mt-2 self-start hover:underline" href="#">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips and Guides -->
+                    <div class="px-4 py-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h2 class="text-[#1F2937] text-2xl font-bold leading-tight tracking-[-0.015em] mb-6">Daily Health Tips</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-solid border-[#E5E7EB]">
+                                        <div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-[#F3E8FF] shrink-0 size-8 mt-1">
+                                            <span class="material-symbols-outlined text-purple-600">water_drop</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#1F2937] text-base font-medium leading-normal">Hydration</p>
+                                            <p class="text-[#6B7280] text-sm font-normal leading-normal">Stay hydrated by drinking plenty of water throughout the day.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-solid border-[#E5E7EB]">
+                                        <div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-[#F3E8FF] shrink-0 size-8 mt-1">
+                                            <span class="material-symbols-outlined text-purple-600">directions_run</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#1F2937] text-base font-medium leading-normal">Exercise</p>
+                                            <p class="text-[#6B7280] text-sm font-normal leading-normal">Engage in regular physical activity, such as walking or cycling.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-solid border-[#E5E7EB]">
+                                        <div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-[#F3E8FF] shrink-0 size-8 mt-1">
+                                            <span class="material-symbols-outlined text-purple-600">bedtime</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#1F2937] text-base font-medium leading-normal">Sleep</p>
+                                            <p class="text-[#6B7280] text-sm font-normal leading-normal">Get sufficient sleep to allow your body to rest and recover.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="text-[#1F2937] text-2xl font-bold leading-tight tracking-[-0.015em] mb-6">Quick First-Aid Guides</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-solid border-[#E5E7EB]">
+                                        <div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-[#F3E8FF] shrink-0 size-8 mt-1">
+                                            <span class="material-symbols-outlined text-purple-600">emergency</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#1F2937] text-base font-medium leading-normal">Choking</p>
+                                            <p class="text-[#6B7280] text-sm font-normal leading-normal">Steps to take when someone is choking.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-solid border-[#E5E7EB]">
+                                        <div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-[#F3E8FF] shrink-0 size-8 mt-1">
+                                            <span class="material-symbols-outlined text-purple-600">local_fire_department</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#1F2937] text-base font-medium leading-normal">Burns</p>
+                                            <p class="text-[#6B7280] text-sm font-normal leading-normal">How to handle burns and scalds.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-solid border-[#E5E7EB]">
+                                        <div class="text-[var(--primary-color)] flex items-center justify-center rounded-lg bg-[#F3E8FF] shrink-0 size-8 mt-1">
+                                            <span class="material-symbols-outlined text-purple-600">medical_services</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#1F2937] text-base font-medium leading-normal">Nosebleed</p>
+                                            <p class="text-[#6B7280] text-sm font-normal leading-normal">What to do in case of a nosebleed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="bg-purple-50 border-t border-purple-200 py-10">
+                <div class="max-w-6xl mx-auto px-6 text-center">
+                    <p class="text-slate-500 text-sm">© 2024 Sehat Sahayak. Reliable health info for rural Punjab.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

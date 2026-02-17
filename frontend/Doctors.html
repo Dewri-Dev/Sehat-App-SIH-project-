@@ -33,7 +33,8 @@
                     <h2 class="text-slate-900 text-xl font-bold tracking-tight">Sehat</h2>
                 </div>
                 <nav class="hidden md:flex items-center gap-6">
-                    <a class="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors" href="#">Home</a>
+                    <!-- UPDATED HOME LINK -->
+                    <a class="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors" href="homepage.html">Home</a>
                     <a class="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors" href="#">Services</a>
                     <a class="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors" href="#">About Us</a>
                     <a class="text-slate-600 hover:text-slate-900 text-sm font-medium transition-colors" href="#">Contact</a>
@@ -150,7 +151,7 @@
     </div>
 
     <script>
-        // Mock Data to replace localhost:5000
+        // Mock Data
         const mockDoctors = [
             { id: 1, name: "Dr. Priya Sharma", specialty: "Cardiology", experience: 15, rating: 4.9, reviews: 124 },
             { id: 2, name: "Dr. Vikram Singh", specialty: "General Physician", experience: 10, rating: 4.8, reviews: 98 },
@@ -189,12 +190,19 @@
                         <span class="text-slate-400">(${doc.reviews} reviews)</span>
                     </div>
 
-                    <button class="w-full rounded-full h-11 bg-purple-50 text-purple-700 font-bold hover:bg-purple-100 transition-colors border border-purple-100">
+                    <button onclick="goToProfile(${doc.id})" class="w-full rounded-full h-11 bg-purple-50 text-purple-700 font-bold hover:bg-purple-100 transition-colors border border-purple-100">
                         View Profile
                     </button>
                 `;
                 container.appendChild(card);
             });
+        }
+
+        // FUNCTION TO HANDLE REDIRECTION
+        function goToProfile(id) {
+            const selectedDoc = mockDoctors.find(d => d.id === id);
+            localStorage.setItem('selectedDoctor', JSON.stringify(selectedDoc));
+            window.location.href = 'info.html';
         }
 
         // Initialize
