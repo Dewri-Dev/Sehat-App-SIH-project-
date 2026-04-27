@@ -8,10 +8,11 @@ CORS(app)
 
 # Database Configuration
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'Nayan@123',
-    'database': 'sehat'
+    'host': os.environ.get('DB_HOST', 'localhost'),
+    'user': os.environ.get('DB_USER', 'root'),
+    'password': os.environ.get('DB_PASSWORD', 'Nayan@123'),
+    'database': os.environ.get('DB_NAME', 'sehat'),
+    'port': int(os.environ.get('DB_PORT', 3306))
 }
 
 # Mock Data Fallback
@@ -87,4 +88,5 @@ def serve(path):
         return send_from_directory(app.static_folder, 'homepage.html')
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=os.environ.get('DEBUG', 'False') == 'True')

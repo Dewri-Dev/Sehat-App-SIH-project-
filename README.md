@@ -1,11 +1,10 @@
 # 🏥 Sehat Sahayak - Professional Healthcare Prototype
 
-**Sehat Sahayak** is a premium, full-stack healthcare platform remodeled with a professional medical theme inspired by industry leaders like Pharmeasy. Designed with a focus on trust, accessibility, and modern UI/UX, this prototype bridges the gap between quality medical services and users, specifically tailored for regional accessibility in Punjab.
+**Sehat Sahayak** is a premium, full-stack healthcare platform remodeled with a professional medical theme inspired by industry leaders like Pharmeasy. Designed with a focus on trust, accessibility, and modern UI/UX, this prototype bridges the gap between quality medical services and users.
 
 ---
 
-## 🎨 Remodeled UI/UX (Pharmeasy Theme)
-The application has undergone a complete visual overhaul to project a professional medical identity:
+## 🎨 UI/UX Features
 - **Primary Palette:** Signature Medical Teal (`#10847e`) and Hospital White (`#f4f7f4`).
 - **Modern Components:** 32px rounded corners, high-fidelity shadows, and smooth micro-interactions.
 - **Responsive Layout:** A clean, grid-based architecture that works seamlessly across desktop and mobile devices.
@@ -15,35 +14,30 @@ The application has undergone a complete visual overhaul to project a profession
 ## 🚀 Key Features
 
 ### 👨‍⚕️ Advanced Doctor Discovery
-- **Dynamic Filtering:** Filter doctors by specialty (Cardiology, Pediatrics, etc.), experience levels, and location.
+- **Dynamic Filtering:** Filter doctors by specialty, experience levels, and location.
 - **Real-time Search:** Instantly find doctors or specialties via the global search bar.
-- **Dynamic Profiles:** Individual doctor pages with detailed bios, verified reviews, and ratings.
 
 ### 📅 Seamless Appointment Booking
 - **Functional Scheduling:** Select preferred dates and time slots with an interactive UI.
 - **Integrated Backend:** Appointments are processed via Flask API and stored in a MySQL database.
-- **User Validation:** Interactive feedback and confirmation for successful bookings.
-
-### 📚 Health & Wellness Hub
-- **Information Repository:** A dedicated section for first aid guides, nutrition tips, and medical articles.
-- **Content Filtering:** Searchable database of health topics and symptoms.
 
 ### 🛠 Robust Backend
-- **Flask Integration:** Rebuilt from the ground up using Python's Flask framework.
-- **Resilient Data Handling:** Automated fallback to mock data systems ensures the app remains functional even during database maintenance.
+- **Flask Integration:** Built with Python's Flask framework.
+- **Resilient Data Handling:** Automated fallback to mock data ensures functionality even without a live database.
+- **Production Ready:** Configured for deployment on Render with Gunicorn.
 
 ---
 
 ## 💻 Tech Stack
 
 - **Frontend:** HTML5, Tailwind CSS v3, JavaScript (ES6+), Material Symbols.
-- **Backend:** Python, Flask, Flask-CORS.
-- **Database:** MySQL (Integrated via `mysql-connector-python`).
-- **Architecture:** Restful API integration with static frontend serving.
+- **Backend:** Python (Flask), Gunicorn.
+- **Database:** MySQL.
+- **Deployment:** Render (configured via `render.yaml` and `Procfile`).
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation & Local Setup
 
 1. **Clone the repository:**
    ```bash
@@ -53,17 +47,39 @@ The application has undergone a complete visual overhaul to project a profession
 
 2. **Install Dependencies:**
    ```bash
-   pip install flask flask-cors mysql-connector-python
+   pip install -r requirements.txt
    ```
 
-3. **Database Configuration:**
-   Update the `db_config` in `app.py` with your local MySQL credentials.
+3. **Environment Variables:**
+   Create a `.env` file in the root directory and add your database credentials:
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=your_password
+   DB_NAME=sehat
+   DB_PORT=3306
+   DEBUG=True
+   ```
 
 4. **Run the Application:**
    ```bash
    python app.py
    ```
    Access the app at: `http://localhost:5000`
+
+---
+
+## ☁️ Deployment on Render
+
+This project is pre-configured for **Render**.
+
+1. **Connect your GitHub repository** to Render.
+2. Render will automatically detect the `render.yaml` and `Procfile`.
+3. **Configure Environment Variables** in the Render Dashboard:
+   - `DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `DB_PORT`.
+4. The build and start commands are automatically set:
+   - **Build Command:** `pip install -r requirements.txt`
+   - **Start Command:** `gunicorn app:app`
 
 ---
 
