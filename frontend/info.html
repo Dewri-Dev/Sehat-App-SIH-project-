@@ -1,206 +1,226 @@
-<html><head>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<meta charset="utf-8"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<title>Stitch Design</title>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Sehat Sahayak - Doctor Profile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
-<body>
-<div class="relative flex size-full min-h-screen flex-col bg-[#f3f0f9] dark group/design-root overflow-x-hidden" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(158,183,168)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: &quot;Spline Sans&quot;, &quot;Noto Sans&quot;, sans-serif;">
-<div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e5dcf2] px-10 py-3 bg-white">
-<div class="flex items-center gap-4 text-slate-900">
-<div class="size-6 text-[#7c3aed]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path></svg>
-</div>
-<h2 class="text-slate-900 text-xl font-bold leading-tight tracking-[-0.015em]">Sehat Sahayak</h2>
-</div>
-<div class="flex flex-1 justify-end gap-6">
-<div class="flex items-center gap-8 text-base">
-<a class="text-slate-600 font-medium leading-normal hover:text-[#7c3aed] transition-colors" href="#">Home</a>
-<a class="text-slate-600 font-medium leading-normal hover:text-[#7c3aed] transition-colors" href="#">Doctors</a>
-<a class="text-slate-600 font-medium leading-normal hover:text-[#7c3aed] transition-colors" href="#">Services</a>
-<a class="text-slate-600 font-medium leading-normal hover:text-[#7c3aed] transition-colors" href="#">About Us</a>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[#7c3aed] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-violet-700 transition-colors">
-<span class="truncate">Book Now</span>
-</button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIgBKuvzgJw6mCZxzy5amAyAvxcRoTVo-U_GASefaylKLKqWSnRPy9nghcWqplvSE3LsYV0A0lihkyqiVdeIcMDifB2NyYJ7l4u3IwJjli5ANYN1bvlcvM_xPfWGeshTHCSBYBCKpplxHD2RILbPVAw30Pe0yvG86no-I7BTwLta1AUt6EtCoz7mVDuVxlj2GGBAcdQsvXTGz9s_07ejfnoHfy0xNDeYciO6Na2bmqSvrTuoekCl7eQ_gVvFZksiBitnZMeL6GUiLr");'></div>
-</div>
-</header>
-<main class="flex-1 px-10 py-8">
-<div class="mx-auto max-w-7xl">
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-<div class="lg:col-span-2">
-<div class="flex flex-col sm:flex-row items-start gap-6 p-4 bg-white rounded-2xl shadow-sm">
-<img alt="Dr. Priya Sharma" class="rounded-full w-40 h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYqEoqsd729WCVENWEl5DApnJAwXu6xLreaIF-4dU2HcJIP3q0DIByKaDkRU7vhfnFS_8bvE1UMboS8pWcwuxb_LzzfW4WnxLMCsQPqh3_3V1IQSfYA1LVD7X_CNxAiJPTqdBbnxKMYHO7T8glNkvXV7e8jg6mB0FywPSYieaLApqMsf5y-913tws_n_mj8rHY1xYzpb3mAUknSoMK-bCEtphp1Dvm1RpMay4qgDd75wTYVlmeeuJqRPzkjClnL7zWXwY52JWLEQR3"/>
-<div class="flex flex-col justify-center py-4">
-<h1 class="text-slate-900 text-3xl font-bold leading-tight tracking-[-0.015em]">Dr. Priya Sharma</h1>
-<p class="text-slate-500 text-lg font-medium mt-1">General Physician</p>
-<p class="text-slate-500 text-base mt-2">MBBS, MD - General Medicine</p>
-<p class="text-slate-500 text-base">15 years of experience</p>
-</div>
-</div>
-<div class="mt-8 space-y-8">
-<div>
-<h2 class="text-slate-900 text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3">About Dr. Sharma</h2>
-<p class="text-slate-600 text-base leading-relaxed px-4">
-                      Dr. Priya Sharma is a highly experienced general physician with a passion for providing quality healthcare to rural communities. She completed her MBBS and MD in
-                      General Medicine from a prestigious medical college and has been practicing for over 15 years. Dr. Sharma is known for her compassionate approach and dedication to
-                      patient well-being.
-                    </p>
-</div>
-<div>
-<h2 class="text-slate-900 text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3">Contact Information</h2>
-<div class="p-4 border-t border-[#e5dcf2]">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-slate-500">call</span>
-<p class="text-slate-800 text-base">+91-9876543210</p>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-slate-500">mail</span>
-<p class="text-slate-800 text-base">priya.sharma@email.com</p>
-</div>
-<div class="flex items-center gap-3 col-span-full">
-<span class="material-symbols-outlined text-slate-500">location_on</span>
-<p class="text-slate-800 text-base">Village X, District Y, Punjab</p>
-</div>
-</div>
-</div>
-</div>
-<div>
-<h2 class="text-slate-900 text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3">Patient Reviews</h2>
-<div class="flex flex-col md:flex-row gap-8 p-4 border-t border-[#e5dcf2]">
-<div class="flex flex-col items-center justify-center gap-2 text-center">
-<p class="text-slate-900 text-5xl font-black leading-tight tracking-[-0.033em]">4.8</p>
-<div class="flex gap-0.5 text-[#7c3aed]">
-<span class="material-symbols-outlined !text-xl">star</span>
-<span class="material-symbols-outlined !text-xl">star</span>
-<span class="material-symbols-outlined !text-xl">star</span>
-<span class="material-symbols-outlined !text-xl">star</span>
-<span class="material-symbols-outlined !text-xl text-slate-300">star</span>
-</div>
-<p class="text-slate-500 text-base">Based on 125 reviews</p>
-</div>
-<div class="flex-1 grid grid-cols-[auto_1fr_auto] items-center gap-x-4 gap-y-2">
-<p class="text-slate-800 text-sm">5</p>
-<div class="h-2 rounded-full bg-[#e5dcf2]"><div class="h-full rounded-full bg-[#7c3aed]" style="width: 70%;"></div></div>
-<p class="text-slate-500 text-sm text-right">70%</p>
-<p class="text-slate-800 text-sm">4</p>
-<div class="h-2 rounded-full bg-[#e5dcf2]"><div class="h-full rounded-full bg-[#7c3aed]" style="width: 20%;"></div></div>
-<p class="text-slate-500 text-sm text-right">20%</p>
-<p class="text-slate-800 text-sm">3</p>
-<div class="h-2 rounded-full bg-[#e5dcf2]"><div class="h-full rounded-full bg-[#7c3aed]" style="width: 5%;"></div></div>
-<p class="text-slate-500 text-sm text-right">5%</p>
-<p class="text-slate-800 text-sm">2</p>
-<div class="h-2 rounded-full bg-[#e5dcf2]"><div class="h-full rounded-full bg-[#7c3aed]" style="width: 3%;"></div></div>
-<p class="text-slate-500 text-sm text-right">3%</p>
-<p class="text-slate-800 text-sm">1</p>
-<div class="h-2 rounded-full bg-[#e5dcf2]"><div class="h-full rounded-full bg-[#7c3aed]" style="width: 2%;"></div></div>
-<p class="text-slate-500 text-sm text-right">2%</p>
-</div>
-</div>
-<div class="space-y-6 p-4">
-<div class="flex flex-col gap-3 border-b border-[#e5dcf2] pb-6">
-<div class="flex items-center gap-3">
-<img alt="Rajesh Kumar" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZZn7XPBQy3bfc81oJUTJ6tpVcfSzQvYmlW5hdH9p1Dbg-PRyDi7z-SecKhjrw3p1qBx3JU_UAxkgns2Olw-WnaE6kg2SE7jxikAbCkc2Npurr1I1H4yBOltU4zvMhGZjt_UH36TyDk5KxtGNo8KtzRfYLwufFi4REwBpTwmQAWnRWyzjt0TiMVBX2bVGCsleDA5Te5I6IiuXojYRGwsX13enKkc3Yw1BwPLYxK7irqY40eUrQ9lJpUOdc42f25KTh38UiEnQyzGZB"/>
-<div>
-<p class="text-slate-800 font-medium">Rajesh Kumar</p>
-<p class="text-slate-500 text-sm">June 15, 2024</p>
-</div>
-</div>
-<div class="flex gap-0.5 text-[#7c3aed]">
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-</div>
-<p class="text-slate-600">Dr. Sharma is an excellent physician. She listened to my concerns patiently and provided effective treatment. Highly recommended!</p>
-</div>
-<div class="flex flex-col gap-3 border-b border-[#e5dcf2] pb-6">
-<div class="flex items-center gap-3">
-<img alt="Sandeep Kaur" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkeElBujjRwrxSI4fLRh34-PzTP9WL6nFOyGJ3eyA9NOLnCSw_BzOvN9ZEgSwR-5zARDaVrthlrTONBKcrAUf80JThmeEbRfWpQNFpal4NcJlEUVk6h4fsX0zMxJ5R-CMqs76_nVZ5yLBpOmv48u17La04a66M2VQq6UVOxFTxdRO3b--jQn7ISQPP_HdT1qOFEbIpTIjYzheXbejAmzz5nksanzLYjpa-ssvYzQMrtNzOgSqlzMsq8eF288fbJM3rP3gAWYtY3H05"/>
-<div>
-<p class="text-slate-800 font-medium">Sandeep Kaur</p>
-<p class="text-slate-500 text-sm">June 10, 2024</p>
-</div>
-</div>
-<div class="flex gap-0.5 text-[#7c3aed]">
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base text-slate-300">star</span>
-</div>
-<p class="text-slate-600">I had a good experience with Dr. Sharma. She was knowledgeable and caring, but the waiting time was a bit long.</p>
-</div>
-<div class="flex flex-col gap-3">
-<div class="flex items-center gap-3">
-<img alt="Gurpreet Singh" class="size-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMkFhLxhVSJcvqfiP488MeWg7rC1E5pB5kR1YZF6Qp9JwTIfX_QRLk47FB2aPf_luAw7Bje8mysgCpvy_NGC9hrBZ0ilrlaSN0Y9oLerHxMawd1KCEKNj0AE1JE0pI5pyv08TksuqBqE5Kbp2_3MvzZS0OFSXiMxKusNr6uS5pspBWZgj-WUawXq1xh9sg4Bq-RDdBClExD7p28LKMLTj17PrFyNDAP67OrkNTMOnwjc42qrT2fXglmfHDbs2vYeZjGalWI07aGbxT"/>
-<div>
-<p class="text-slate-800 font-medium">Gurpreet Singh</p>
-<p class="text-slate-500 text-sm">May 28, 2024</p>
-</div>
-</div>
-<div class="flex gap-0.5 text-[#7c3aed]">
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-<span class="material-symbols-outlined !text-base">star</span>
-</div>
-<p class="text-slate-600">Dr. Sharma is a lifesaver! She diagnosed my condition accurately and helped me recover quickly. Thank you!</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-1">
-<div class="sticky top-8 bg-white rounded-2xl p-6 shadow-sm">
-<h2 class="text-slate-900 text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Book an Appointment</h2>
-<div class="space-y-6">
-<div>
-<h3 class="text-slate-800 text-lg font-semibold mb-2">Select Date</h3>
-<div class="bg-[#f3f0f9] rounded-xl p-4">
-<div class="flex items-center justify-between mb-3">
-<button class="text-slate-600 hover:text-[#7c3aed]"><span class="material-symbols-outlined">chevron_left</span></button>
-<p class="text-slate-800 font-bold">July 2024</p>
-<button class="text-slate-600 hover:text-[#7c3aed]"><span class="material-symbols-outlined">chevron_right</span></button>
-</div>
-<div class="grid grid-cols-7 gap-2 text-center text-sm text-slate-800">
-<p class="text-slate-500">S</p><p class="text-slate-500">M</p><p class="text-slate-500">T</p><p class="text-slate-500">W</p><p class="text-slate-500">T</p><p class="text-slate-500">F</p><p class="text-slate-500">S</p>
-<span class="col-start-3 text-slate-400">1</span><span class="text-slate-400">2</span><span class="text-slate-400">3</span><span class="text-slate-400">4</span><span class="text-slate-400">5</span><span class="text-slate-400">6</span>
-<span>7</span><span>8</span><span>9</span><button class="hover:bg-[#e5dcf2] rounded-full">10</button><button class="hover:bg-[#e5dcf2] rounded-full">11</button><button class="hover:bg-[#e5dcf2] rounded-full">12</button><button class="hover:bg-[#e5dcf2] rounded-full">13</button>
-<span>14</span><span>15</span><button class="hover:bg-[#e5dcf2] rounded-full">16</button><button class="hover:bg-[#e5dcf2] rounded-full">17</button><button class="hover:bg-[#e5dcf2] rounded-full">18</button><button class="bg-[#7c3aed] text-white rounded-full font-bold">19</button><button class="hover:bg-[#e5dcf2] rounded-full">20</button>
-<span>21</span><span>22</span><button class="hover:bg-[#e5dcf2] rounded-full">23</button><button class="hover:bg-[#e5dcf2] rounded-full">24</button><button class="hover:bg-[#e5dcf2] rounded-full">25</button><button class="hover:bg-[#e5dcf2] rounded-full">26</button><button class="hover:bg-[#e5dcf2] rounded-full">27</button>
-<span>28</span><span>29</span><button class="hover:bg-[#e5dcf2] rounded-full">30</button><button class="hover:bg-[#e5dcf2] rounded-full">31</button>
-</div>
-</div>
-</div>
-<div>
-<h3 class="text-slate-800 text-lg font-semibold mb-2">Select Time</h3>
-<div class="grid grid-cols-2 gap-3 text-slate-800">
-<button class="w-full text-center py-3 border border-[#e5dcf2] rounded-full hover:border-[#7c3aed] hover:text-[#7c3aed] transition-colors">09:00 AM</button>
-<button class="w-full text-center py-3 border border-[#e5dcf2] rounded-full hover:border-[#7c3aed] hover:text-[#7c3aed] transition-colors">10:00 AM</button>
-<button class="w-full text-center py-3 border border-[#7c3aed] bg-violet-100 text-[#7c3aed] rounded-full font-semibold">11:00 AM</button>
-<button class="w-full text-center py-3 border border-[#e5dcf2] rounded-full hover:border-[#7c3aed] hover:text-[#7c3aed] transition-colors">01:00 PM</button>
-<button class="w-full text-center py-3 border border-[#e5dcf2] rounded-full text-slate-400 cursor-not-allowed" disabled="">02:00 PM</button>
-<button class="w-full text-center py-3 border border-[#e5dcf2] rounded-full hover:border-[#7c3aed] hover:text-[#7c3aed] transition-colors">03:00 PM</button>
-</div>
-</div>
-<button class="w-full flex items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#7c3aed] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-violet-700 transition-colors">
-                      Confirm Appointment
-                    </button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div>
-</div>
-</body></html>
+<body class="bg-[#f4f7f4] text-gray-900">
+    <div class="relative flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-100 px-6 md:px-20 py-4 bg-white sticky top-0 z-50 shadow-sm">
+            <div class="flex items-center gap-4 text-[#10847e]">
+                <a href="homepage.html" class="flex items-center gap-2">
+                    <svg class="size-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"></path>
+                        <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10,10-4.48,10-10S17.52,2,12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8,8,3.59,8,8S16.41,20,12,20zM13,16h-2v-2h2V16zM13,12h-2V7h2V12z" fill="#10847e"></path>
+                    </svg>
+                    <h2 class="text-[#10847e] text-2xl font-black leading-tight tracking-tight">Sehat Sahayak</h2>
+                </a>
+            </div>
+            
+            <nav class="flex items-center gap-6 text-gray-600">
+                <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="homepage.html">Home</a>
+                <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="Doctors.html">Find Doctors</a>
+                <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="services.html">Services</a>
+                <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="about.html">About</a>
+                <div class="size-10 rounded-full border border-gray-200 bg-gray-100 overflow-hidden cursor-pointer">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User Avatar" class="w-full h-full object-cover">
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-1 px-6 md:px-20 py-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2 space-y-8">
+                        <!-- Profile Card -->
+                        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col md:flex-row items-center md:items-start gap-8">
+                            <div class="size-40 bg-[#e2f0ef] rounded-full flex items-center justify-center text-[#10847e] text-6xl font-black shrink-0">
+                                D
+                            </div>
+                            <div class="flex-1 text-center md:text-left">
+                                <h1 class="text-3xl font-black text-gray-900 mb-2">Dr. Priya Sharma</h1>
+                                <p class="text-[#10847e] text-lg font-bold mb-4">CARDIOLOGIST</p>
+                                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+                                    <div class="bg-[#f4f7f4] px-4 py-2 rounded-full font-bold text-gray-600">MBBS, MD</div>
+                                    <div class="bg-[#f4f7f4] px-4 py-2 rounded-full font-bold text-gray-600">15+ Years Exp.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Section -->
+                        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <h2 class="text-2xl font-bold mb-6">About Doctor</h2>
+                            <p class="text-gray-600 leading-relaxed">
+                                Dr. Priya Sharma is a highly experienced medical professional with a focus on patient-centric care. She has been serving the community with dedication and expertise for over a decade.
+                            </p>
+                        </div>
+
+                        <!-- Reviews -->
+                        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                            <h2 class="text-2xl font-bold mb-8">Patient Reviews</h2>
+                            <div class="flex items-center gap-6 mb-10">
+                                <div class="text-5xl font-black text-gray-900">4.8</div>
+                                <div>
+                                    <div class="flex text-amber-400 mb-1">
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star</span>
+                                        <span class="material-symbols-outlined">star_half</span>
+                                    </div>
+                                    <p class="text-gray-500 font-bold text-sm">Based on 125 reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking Sidebar -->
+                    <div class="lg:col-span-1">
+                        <div class="sticky top-28 bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+                            <h2 class="text-2xl font-black mb-6">Book Appointment</h2>
+                            
+                            <div class="space-y-8">
+                                <div>
+                                    <p class="text-sm font-bold text-gray-400 uppercase mb-4 tracking-wider">Select Date</p>
+                                    <div class="grid grid-cols-7 gap-2 text-center text-xs">
+                                        <div class="text-gray-400 font-bold">M</div><div class="text-gray-400 font-bold">T</div><div class="text-gray-400 font-bold">W</div><div class="text-gray-400 font-bold">T</div><div class="text-gray-400 font-bold">F</div><div class="text-gray-400 font-bold">S</div><div class="text-gray-400 font-bold">S</div>
+                                        <button class="p-3 rounded-xl hover:bg-[#e2f0ef] transition-all">14</button>
+                                        <button class="p-3 rounded-xl hover:bg-[#e2f0ef] transition-all">15</button>
+                                        <button class="p-3 rounded-xl bg-[#10847e] text-white font-black shadow-md shadow-[#10847e30]">16</button>
+                                        <button class="p-3 rounded-xl hover:bg-[#e2f0ef] transition-all">17</button>
+                                        <button class="p-3 rounded-xl hover:bg-[#e2f0ef] transition-all">18</button>
+                                        <button class="p-3 rounded-xl hover:bg-[#e2f0ef] transition-all">19</button>
+                                        <button class="p-3 rounded-xl hover:bg-[#e2f0ef] transition-all">20</button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-sm font-bold text-gray-400 uppercase mb-4 tracking-wider">Select Time</p>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <button class="py-3 rounded-xl border border-gray-100 bg-gray-50 font-bold text-gray-600 hover:border-[#10847e] transition-all">09:00 AM</button>
+                                        <button class="py-3 rounded-xl border-2 border-[#10847e] bg-[#e2f0ef] font-black text-[#10847e]">10:30 AM</button>
+                                        <button class="py-3 rounded-xl border border-gray-100 bg-gray-50 font-bold text-gray-600 hover:border-[#10847e] transition-all">02:00 PM</button>
+                                        <button class="py-3 rounded-xl border border-gray-100 bg-gray-50 font-bold text-gray-600 hover:border-[#10847e] transition-all">04:30 PM</button>
+                                    </div>
+                                </div>
+
+                                <button id="confirmBtn" class="w-full py-4 bg-[#10847e] text-white rounded-2xl font-black text-lg shadow-xl shadow-[#10847e30] hover:bg-[#0e756f] transition-all active:scale-95">
+                                    Confirm Booking
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-[#f4f7f4] border-t border-[#c5e1e0] py-12 px-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                    <div class="col-span-1 md:col-span-2">
+                        <div class="flex items-center gap-4 mb-4">
+                            <svg class="size-10" fill="#10847e" viewBox="0 0 24 24">
+                                <path d="M12,4c-4.41,0-8,3.59-8,8s3.59,8,8,8s8-3.59,8-8S16.41,4,12,4z M13,16h-2v-2h2V16z M13,12h-2V7h2V12z"></path>
+                            </svg>
+                            <h2 class="text-2xl font-bold text-[#10847e]">Sehat Sahayak</h2>
+                        </div>
+                        <p class="text-gray-600 mb-6 max-w-sm">Punjab's most trusted healthcare platform. We provide quality healthcare services at your fingertips.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><a href="homepage.html" class="hover:text-[#10847e]">Home</a></li>
+                            <li><a href="Doctors.html" class="hover:text-[#10847e]">Find Doctors</a></li>
+                            <li><a href="services.html" class="hover:text-[#10847e]">Services</a></li>
+                            <li><a href="Health info.html" class="hover:text-[#10847e]">Health Hub</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Connect with Developer</h3>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Dewri-Dev" target="_blank" class="size-10 bg-white rounded-full flex items-center justify-center shadow-sm border border-[#c5e1e0] hover:bg-[#e2f0ef] transition-colors">
+                                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nayandewri/" target="_blank" class="size-10 bg-white rounded-full flex items-center justify-center shadow-sm border border-[#c5e1e0] hover:bg-[#e2f0ef] transition-colors">
+                                <svg class="size-6" fill="#0077b5" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-[#c5e1e0] pt-8 text-center">
+                    <p class="text-gray-500 text-sm">© 2024 Sehat Sahayak. All rights reserved. Developed by Nayan Dewri.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const docData = localStorage.getItem('selectedDoctor');
+        if(docData) {
+            const doctor = JSON.parse(docData);
+            document.querySelector('h1').textContent = doctor.name;
+            document.querySelector('p.text-\\[\\#10847e\\].text-lg').textContent = (doctor.specialty || 'General').toUpperCase();
+            document.querySelector('.size-40').textContent = doctor.name.charAt(0);
+            const detailBadges = document.querySelectorAll('.bg-\\[\\#f4f7f4\\]');
+            if(detailBadges.length > 1) detailBadges[1].textContent = `${doctor.experience}+ Years Exp.`;
+            document.querySelector('.text-5xl.font-black').textContent = doctor.rating;
+        }
+
+        let selectedTime = "10:30 AM";
+        let selectedDate = "16";
+
+        const timeButtons = document.querySelectorAll('.grid-cols-2 button');
+        timeButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                timeButtons.forEach(b => {
+                    b.classList.remove('border-2', 'border-[#10847e]', 'bg-[#e2f0ef]', 'font-black', 'text-[#10847e]');
+                    b.classList.add('border', 'border-gray-100', 'bg-gray-50', 'font-bold', 'text-gray-600');
+                });
+                e.target.classList.remove('border', 'border-gray-100', 'bg-gray-50', 'font-bold', 'text-gray-600');
+                e.target.classList.add('border-2', 'border-[#10847e]', 'bg-[#e2f0ef]', 'font-black', 'text-[#10847e]');
+                selectedTime = e.target.textContent.trim();
+            });
+        });
+
+        const dateButtons = document.querySelectorAll('.grid-cols-7 button');
+        dateButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                dateButtons.forEach(b => {
+                    b.classList.remove('bg-[#10847e]', 'text-white', 'font-black', 'shadow-md', 'shadow-[#10847e30]');
+                    b.classList.add('hover:bg-[#e2f0ef]');
+                });
+                e.target.classList.remove('hover:bg-[#e2f0ef]');
+                e.target.classList.add('bg-[#10847e]', 'text-white', 'font-black', 'shadow-md', 'shadow-[#10847e30]');
+                selectedDate = e.target.textContent.trim();
+            });
+        });
+
+        document.getElementById('confirmBtn').addEventListener('click', async () => {
+            const doc = docData ? JSON.parse(docData) : { id: 1 };
+            try {
+                const res = await fetch('/api/appointments', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        patient_name: "Nayan Dewri",
+                        doctor_id: doc.id,
+                        appointment_date: `2024-07-${selectedDate.padStart(2, '0')}`,
+                        appointment_time: selectedTime
+                    })
+                });
+                const result = await res.json();
+                alert(result.message);
+            } catch(e) {
+                alert('Booking successful (Demo Mode)');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

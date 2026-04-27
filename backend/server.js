@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const doctorRoutes = require("./routes/doctors");
 const appointmentRoutes = require("./routes/appointments");
@@ -9,14 +10,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, "../frontend")));
+
+app.use("/api/doctors", doctorRoutes);
+app.use("/api/appointments", appointmentRoutes);
+
+app.get("/api/health", (req, res) => {
   res.send("Server running");
 });
 
-app.use("/doctors", doctorRoutes);
-app.use("/appointments", appointmentRoutes);
+// Fallback to index
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/homepage.html"));
+});
 
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 

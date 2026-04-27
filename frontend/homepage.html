@@ -12,101 +12,183 @@
 <body class="bg-gray-50 text-gray-800">
     <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
         <div class="layout-container flex h-full grow flex-col">
-            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-purple-200 px-10 py-4">
-                <div class="flex items-center gap-4 text-gray-800">
-                    <svg class="size-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-100 px-6 md:px-20 py-4 bg-white sticky top-0 z-50 shadow-sm">
+                <div class="flex items-center gap-4 text-[#10847e]">
+                    <svg class="size-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"></path>
-                        <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10,10-4.48,10-10S17.52,2,12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8,8,3.59,8,8S16.41,20,12,20zM13,16h-2v-2h2V16zM13,12h-2V7h2V12z" fill="#9333ea"></path>
+                        <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10,10-4.48,10-10S17.52,2,12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8,8,3.59,8,8S16.41,20,12,20zM13,16h-2v-2h2V16zM13,12h-2V7h2V12z" fill="#10847e"></path>
                     </svg>
-                    <h2 class="text-gray-800 text-xl font-bold leading-tight tracking-[-0.015em]">Sehat Sahayak</h2>
+                    <h2 class="text-[#10847e] text-2xl font-black leading-tight tracking-tight">Sehat Sahayak</h2>
                 </div>
-                <nav class="flex items-center gap-8 text-gray-800">
-                    <a class="text-sm font-medium leading-normal hover:text-purple-600 transition-colors" href="homepage.html">Home</a>
-                    <a class="text-sm font-medium leading-normal hover:text-purple-600 transition-colors" href="Doctors.html">Find Doctors</a>
-                    <a class="text-sm font-medium leading-normal hover:text-purple-600 transition-colors" href="#">Appointments</a>
-                    <!-- CONNECTED NAVIGATION LINK -->
-                    <a class="text-sm font-medium leading-normal hover:text-purple-600 transition-colors" href="Health info.html">Health Info</a>
-                </nav>
-                <div class="flex items-center gap-4">
-                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-transparent text-gray-800 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 border border-transparent hover:border-purple-600 transition-colors">
-                        <span class="material-symbols-outlined"> language </span>
-                        <span class="hidden sm:inline">ਪੰਜਾਬੀ</span>
-                    </button>
-                    <div class="size-10 rounded-full border-2 border-slate-200 bg-slate-200 overflow-hidden">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User Avatar" class="w-full h-full object-cover">
+                
+                <div class="hidden lg:flex flex-1 max-w-xl mx-8">
+                    <div class="relative w-full">
+                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+                        <input id="globalSearch" type="text" placeholder="Search for Doctors, Medicines, Services..." class="w-full h-12 pl-12 pr-4 rounded-md border border-gray-200 focus:border-[#10847e] focus:ring-0 text-sm transition-all outline-none bg-gray-50">
                     </div>
                 </div>
+
+                <nav class="flex items-center gap-6 text-gray-600">
+                    <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="homepage.html">Home</a>
+                    <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="Doctors.html">Find Doctors</a>
+                    <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="services.html">Services</a>
+                    <a class="text-sm font-bold hover:text-[#10847e] transition-colors" href="about.html">About</a>
+                    <div class="size-10 rounded-full border border-gray-200 bg-gray-100 overflow-hidden cursor-pointer">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User Avatar" class="w-full h-full object-cover">
+                    </div>
+                </nav>
             </header>
 
             <main class="flex-1">
-                <section class="relative flex min-h-[60vh] flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 text-center" style='background-image: linear-gradient(rgba(243, 232, 255, 0.8) 0%, rgba(250, 245, 255, 1) 100%), url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&amp;w=2070&amp;auto=format&amp;fit=crop");'>
-                    <div class="max-w-3xl">
-                        <h1 class="text-gray-900 text-5xl font-black leading-tight tracking-tighter md:text-7xl">Your Health Our Priority</h1>
-                        <p class="text-gray-700 mt-4 text-lg font-normal leading-normal md:text-xl">
-                            Connecting you with quality healthcare in rural Punjab. Find doctors, book appointments, and access health information easily.
-                        </p>
-                        <a href="Doctors.html" class="mt-8 inline-flex min-w-[180px] items-center justify-center rounded-full h-12 px-8 bg-purple-600 text-white text-base font-bold transition-transform hover:scale-105">
-                            Get Started Now
-                        </a>
+                <section class="relative bg-white pt-12 pb-20 px-6 md:px-20 overflow-hidden">
+                    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+                        <div class="flex-1 text-left">
+                            <h1 class="text-gray-900 text-5xl md:text-6xl font-black leading-[1.1] mb-6">
+                                Your Trusted <span class="text-[#10847e]">Healthcare</span> Partner in Punjab
+                            </h1>
+                            <p class="text-gray-600 text-lg md:text-xl mb-10 max-w-lg">
+                                Find the best doctors, book appointments, and access health information with ease and trust.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="Doctors.html" class="inline-flex items-center justify-center rounded-md h-14 px-10 bg-[#10847e] text-white text-lg font-bold transition-all hover:bg-[#0e756f] shadow-lg shadow-[#10847e20]">
+                                    Book Now
+                                </a>
+                                <a href="services.html" class="inline-flex items-center justify-center rounded-md h-14 px-10 border-2 border-[#10847e] text-[#10847e] text-lg font-bold transition-all hover:bg-[#f4f7f4]">
+                                    Our Services
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex-1 relative">
+                            <div class="w-full aspect-square bg-[#e2f0ef] rounded-[40px] overflow-hidden rotate-3">
+                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover -rotate-3 scale-110" alt="Healthcare">
+                            </div>
+                            <!-- Floating Info -->
+                            <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-4 animate-bounce">
+                                <div class="size-12 bg-[#10847e] rounded-full flex items-center justify-center text-white">
+                                    <span class="material-symbols-outlined">verified</span>
+                                </div>
+                                <div>
+                                    <p class="text-gray-900 font-bold">100% Trusted</p>
+                                    <p class="text-gray-500 text-sm">Verified Doctors</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <section class="bg-gray-50 py-20 px-4">
-                    <div class="max-w-5xl mx-auto">
-                        <div class="text-center mb-12">
-                            <h2 class="text-gray-900 text-4xl font-bold leading-tight tracking-tight md:text-5xl">How We Can Help You</h2>
-                            <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">Access a range of healthcare services designed for your convenience and well-being.</p>
+                <section class="bg-[#f4f7f4] py-24 px-6 md:px-20">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="flex items-end justify-between mb-12">
+                            <div>
+                                <h2 class="text-gray-900 text-4xl font-black mb-4">Our Top Services</h2>
+                                <p class="text-gray-600 text-lg">Quick and easy access to medical help</p>
+                            </div>
+                            <a href="services.html" class="text-[#10847e] font-bold flex items-center gap-2 hover:underline">View all <span class="material-symbols-outlined">arrow_forward</span></a>
                         </div>
+                        
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <!-- Find Doctors Card -->
-                            <div onclick="window.location.href='Doctors.html'" class="cursor-pointer flex flex-col gap-4 rounded-2xl border border-purple-200 bg-white p-6 text-center items-center transition-all hover:bg-purple-50 hover:border-purple-600 group">
-                                <span class="material-symbols-outlined text-4xl text-purple-600"> person_search </span>
-                                <h3 class="text-gray-900 text-xl font-bold group-hover:text-purple-600 transition-colors">
-                                    Find Doctors
-                                </h3>
-                                <p class="text-gray-600 text-base font-normal leading-normal">Easily search for qualified doctors and specialists near you.</p>
+                            <div onclick="window.location.href='Doctors.html'" class="cursor-pointer group flex flex-col gap-6 rounded-3xl bg-white p-8 transition-all hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
+                                <div class="size-20 rounded-2xl bg-[#e2f0ef] flex items-center justify-center text-[#10847e] group-hover:bg-[#10847e] group-hover:text-white transition-all">
+                                    <span class="material-symbols-outlined text-4xl">person_search</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-900 text-2xl font-bold mb-3">Find Doctors</h3>
+                                    <p class="text-gray-600 leading-relaxed">Search for top specialists near you and book instant appointments.</p>
+                                </div>
+                                <div class="mt-auto flex items-center text-[#10847e] font-bold gap-2">
+                                    Get Started <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </div>
                             </div>
                             
                             <!-- Book Appointments Card -->
-                            <div class="flex flex-col gap-4 rounded-2xl border border-purple-200 bg-white p-6 text-center items-center transition-all hover:bg-purple-50 hover:border-purple-600">
-                                <span class="material-symbols-outlined text-4xl text-purple-600"> calendar_month </span>
-                                <h3 class="text-gray-900 text-xl font-bold">Book Appointments</h3>
-                                <p class="text-gray-600 text-base font-normal leading-normal">Schedule your appointments hassle-free with just a few clicks.</p>
+                            <div onclick="window.location.href='Doctors.html'" class="cursor-pointer group flex flex-col gap-6 rounded-3xl bg-white p-8 transition-all hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
+                                <div class="size-20 rounded-2xl bg-[#c5e1e0] flex items-center justify-center text-[#10847e] group-hover:bg-[#10847e] group-hover:text-white transition-all">
+                                    <span class="material-symbols-outlined text-4xl">calendar_month</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-900 text-2xl font-bold mb-3">Appointments</h3>
+                                    <p class="text-gray-600 leading-relaxed">Manage your health schedules and never miss a follow-up.</p>
+                                </div>
+                                <div class="mt-auto flex items-center text-[#10847e] font-bold gap-2">
+                                    Book Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </div>
                             </div>
                             
-                            <!-- CONNECTED HEALTH INFO CARD -->
-                            <div onclick="window.location.href='Health info.html'" class="cursor-pointer flex flex-col gap-4 rounded-2xl border border-purple-200 bg-white p-6 text-center items-center transition-all hover:bg-purple-50 hover:border-purple-600 group">
-                                <span class="material-symbols-outlined text-4xl text-purple-600"> menu_book </span>
-                                <h3 class="text-gray-900 text-xl font-bold group-hover:text-purple-600 transition-colors">
-                                    Health Information
-                                </h3>
-                                <p class="text-gray-600 text-base font-normal leading-normal">Access a wealth of reliable health information and articles.</p>
+                            <!-- Health Info Card -->
+                            <div onclick="window.location.href='Health info.html'" class="cursor-pointer group flex flex-col gap-6 rounded-3xl bg-white p-8 transition-all hover:shadow-2xl hover:-translate-y-2 border border-gray-100">
+                                <div class="size-20 rounded-2xl bg-[#f4f7f4] flex items-center justify-center text-[#10847e] group-hover:bg-[#10847e] group-hover:text-white transition-all border border-[#10847e]">
+                                    <span class="material-symbols-outlined text-4xl">menu_book</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-gray-900 text-2xl font-bold mb-3">Health Hub</h3>
+                                    <p class="text-gray-600 leading-relaxed">Access verified articles and tips for a healthier lifestyle.</p>
+                                </div>
+                                <div class="mt-auto flex items-center text-[#10847e] font-bold gap-2">
+                                    Read Articles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
 
-            <footer class="bg-purple-50 border-t border-purple-200">
-                <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                    <div class="flex flex-col items-center justify-between md:flex-row">
-                        <div class="flex items-center gap-4 mb-6 md:mb-0">
-                            <svg class="size-8" fill="#9333ea" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12,4c-4.41,0-8,3.59-8,8s3.59,8,8,8s8-3.59,8-8S16.41,4,12,4z M13,16h-2v-2h2V16z M13,12h-2V7h2V12z"></path>
-                            </svg>
-                            <h2 class="text-gray-800 text-xl font-bold">Sehat Sahayak</h2>
+            
+            <footer class="bg-[#f4f7f4] border-t border-[#c5e1e0] py-12 px-10">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                        <div class="col-span-1 md:col-span-2">
+                            <div class="flex items-center gap-4 mb-4">
+                                <svg class="size-10" fill="#10847e" viewBox="0 0 24 24">
+                                    <path d="M12,4c-4.41,0-8,3.59-8,8s3.59,8,8,8s8-3.59,8-8S16.41,4,12,4z M13,16h-2v-2h2V16z M13,12h-2V7h2V12z"></path>
+                                </svg>
+                                <h2 class="text-2xl font-bold text-[#10847e]">Sehat Sahayak</h2>
+                            </div>
+                            <p class="text-gray-600 mb-6 max-w-sm">Punjab's most trusted healthcare platform. We provide quality healthcare services at your fingertips.</p>
                         </div>
-                        <div class="flex flex-wrap justify-center gap-x-6 gap-y-4 mb-6 md:mb-0">
-                            <a class="text-gray-600 text-base font-normal leading-normal hover:text-gray-900" href="#">About Us</a>
-                            <a class="text-gray-600 text-base font-normal leading-normal hover:text-gray-900" href="#">Contact</a>
-                            <a class="text-gray-600 text-base font-normal leading-normal hover:text-gray-900" href="#">Privacy Policy</a>
-                            <a class="text-gray-600 text-base font-normal leading-normal hover:text-gray-900" href="#">Terms of Service</a>
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li><a href="homepage.html" class="hover:text-[#10847e]">Home</a></li>
+                                <li><a href="Doctors.html" class="hover:text-[#10847e]">Find Doctors</a></li>
+                                <li><a href="services.html" class="hover:text-[#10847e]">Services</a></li>
+                                <li><a href="Health info.html" class="hover:text-[#10847e]">Health Hub</a></li>
+                            </ul>
                         </div>
-                        <p class="text-gray-600 text-sm">© 2024 Sehat Sahayak. All rights reserved.</p>
+                        <div>
+                            <h3 class="text-lg font-bold mb-4">Connect with Developer</h3>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/Dewri-Dev" target="_blank" class="size-10 bg-white rounded-full flex items-center justify-center shadow-sm border border-[#c5e1e0] hover:bg-[#e2f0ef] transition-colors">
+                                    <svg class="size-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/nayandewri/" target="_blank" class="size-10 bg-white rounded-full flex items-center justify-center shadow-sm border border-[#c5e1e0] hover:bg-[#e2f0ef] transition-colors">
+                                    <svg class="size-6" fill="#0077b5" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-[#c5e1e0] pt-8 text-center">
+                        <p class="text-gray-500 text-sm">© 2024 Sehat Sahayak. All rights reserved. Developed by Nayan Dewri.</p>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const globalSearch = document.getElementById('globalSearch');
+            if (globalSearch) {
+                globalSearch.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        const query = e.target.value.trim();
+                        if (query) {
+                            window.location.href = `Doctors.html?search=${encodeURIComponent(query)}`;
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
